@@ -85,7 +85,7 @@ class _signupState extends State<signup> {
                           ),
                         ),
                       ),
-                      Padding(
+                       Padding(
                         padding: const EdgeInsets.only(top: 10),
                         child: TextField(
 
@@ -212,6 +212,9 @@ class _signupState extends State<signup> {
 
                                         });
                                         homepage(firstname.text.toString());
+
+                                        Navigator.pushNamed(context, "/homepage",arguments: firstname.text.toString());
+
                                       }
                                     : null,
                                 child: Text(

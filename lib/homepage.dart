@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 class homepage extends StatefulWidget {
   var firstname;
   homepage(this.firstname);
-
-
-
   @override
   State<homepage> createState() => _homepageState(firstname);
 }
@@ -14,6 +11,7 @@ class _homepageState extends State<homepage> {
   _homepageState(this.firstname);
   @override
   Widget build(BuildContext context) {
+    final arg=ModalRoute.of(context)!.settings.arguments;
 
     return Scaffold(
       body:ListView(
@@ -28,7 +26,7 @@ class _homepageState extends State<homepage> {
                     radius: 55,
 
                   ),
-                  Text('$firstname')
+                  Text(arg.toString())
                 ],
               ),
             ),
