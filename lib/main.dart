@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:fly_high/Addnumber_page1.dart';
+import 'package:fly_high/bottomnavigationbar_mainpage.dart';
 import 'package:fly_high/loginpage.dart';
 import 'package:fly_high/signuppage.dart';
 
@@ -16,7 +17,9 @@ void main() {
       "/login": (contex) => const login(),
       "/signup": (contex) => const signup(),
       "/screen1": (contex) => const screen1(),
+      "/Mainpage":(contex) => const Mainpage(),
       "/homepage":(context)=>  homepage(String),
+
     },
   ));
 }

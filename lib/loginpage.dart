@@ -116,7 +116,7 @@ class _loginState extends State<login> {
                                       onPressed: () {
 
                                         Navigator.pop(context);
-                                        Navigator.pushNamed(context, "/homepage");
+                                        Navigator.pushNamed(context, "/Mainpage");
 
                                       },
                                     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class homepage extends StatefulWidget {
   var firstname;
   homepage(this.firstname);
@@ -13,8 +14,9 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     final arg=ModalRoute.of(context)!.settings.arguments;
 
-    return Scaffold(
-      body:ListView(
+    return
+
+      ListView(
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 30),
@@ -32,7 +34,7 @@ class _homepageState extends State<homepage> {
             ),
           )
         ],
-      ),
-    );
+      );
+
   }
 }
