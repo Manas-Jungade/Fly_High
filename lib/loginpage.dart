@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fly_high/otpscreen.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -80,13 +81,17 @@ class _loginState extends State<login> {
                             Container(
                               alignment: Alignment.bottomRight,
                               child: InkWell(
+
                                 child: Text(
                                   "Forgot Password",
                                   style: TextStyle(
                                       color: Colors.blue,
                                       decoration: TextDecoration.underline),
                                 ),
-                                onTap: () {},
+                                onTap: () {
+
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const otpscreen()));
+                                },
                               ),
                             ),
                             SizedBox(

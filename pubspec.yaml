@@ -39,6 +39,8 @@ dependencies:
   shared_preferences: ^2.2.2
   quickalert:
   image_picker: ^1.0.4
+  flutter_otp_text_field: ^1.1.1
+
 
 
 dev_dependencies:
